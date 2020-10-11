@@ -6,7 +6,7 @@ import homeIcon from "../home.svg";
 function Header() {
   return (
     <Navbar bg="info" variant="dark" expand="md">
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="/">
         <img
           src={homeIcon}
           width="30"
@@ -19,10 +19,10 @@ function Header() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="justify-content-end">
-          <Nav.Link href="#home">ACCUEIL</Nav.Link>
-          <Nav.Link href="#features">A PROPOS</Nav.Link>
-          <Nav.Link href="#pricing">COMPETENCES</Nav.Link>
-          <Nav.Link href="#pricing">PORTOFOLIO</Nav.Link>
+          <Nav.Link href="/">ACCUEIL</Nav.Link>
+          <Nav.Link href="/a-propos">A PROPOS</Nav.Link>
+          <Nav.Link href="/competences">COMPETENCES</Nav.Link>
+          <Nav.Link href="/portofolio">PORTOFOLIO</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
