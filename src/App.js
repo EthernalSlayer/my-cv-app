@@ -9,19 +9,15 @@ import Portofolio from "./component/Portofolio";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Header />
-        <Container>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/competences" component={Competences} />
-            <Route path="/a-propos" component={Apropos} />
-            <Route path="/portofolio" component={Portofolio} />
-          </Switch>
-        </Container>
-      </Router>
-    </div>
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/competences" component={Competences} />
+        <Route path="/a-propos" component={Apropos} />
+        <Route path="/portofolio" component={Portofolio} />
+      </Switch>
+    </Router>
   );
 }
 
