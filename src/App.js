@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./component/Header";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Container } from "react-bootstrap";
 import Home from "./component/Home";
 import Competences from "./component/Competences";
 import Apropos from "./component/Apropos";

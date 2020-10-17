@@ -8,6 +8,7 @@ function Apropos() {
         <Col md="auto" xs="auto">
           <Card
             bg="light"
+            className="text-center"
             style={{
               borderRadius: "20px",
               margin: "5% 8% 8% 5%",
