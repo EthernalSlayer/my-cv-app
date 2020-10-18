@@ -18,7 +18,7 @@ function Header() {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="justify-content-end" defaultActiveKey="/">
+        <Nav className="justify-content-end">
           <NavLink exact to="/" style={{ textDecoration: "none" }}>
             <Nav.Link href="/" as="div">
               ACCUEIL
