@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import avatar from "../avatar.png";
+import avatar from "../assets/avatar.png";
 
 function Home() {
   return (
