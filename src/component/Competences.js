@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row, Card, CardDeck } from "react-bootstrap";
+import { Col, Container, Row, Card } from "react-bootstrap";
 
 import js from "../assets/javascript1.jpg";
 import html from "../assets/html1.png";
@@ -22,7 +22,12 @@ import postman from "../assets/postman1.png";
 
 function Competences() {
   return (
-    <Container className="bg-dark" fluid as="main">
+    <Container
+      className="bg-dark"
+      fluid
+      as="main"
+      style={{ paddingBottom: "5%" }}
+    >
       <Row className="justify-content-center">
         <Col className="text-light text-center">
           <h1 style={{ marginTop: "2%" }}>COMPETENCES</h1>

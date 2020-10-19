@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./component/Header";
+import Footer from "./component/footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./component/Home";
 import Competences from "./component/Competences";
@@ -16,6 +17,7 @@ function App() {
         <Route path="/a-propos" component={Apropos} />
         <Route path="/portofolio" component={Portofolio} />
       </Switch>
+      <Footer />
     </Router>
   );
 }
