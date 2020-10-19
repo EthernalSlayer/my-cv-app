@@ -11,12 +11,29 @@ function Footer() {
       <Row>
         <Col md="6" xs="12" className="text-light text-center">
           <h3>Retrouver Moi</h3>
-          <h6>
-            <ImGithub style={{ marginBottom: "5px" }} /> EthernalSlayer
-          </h6>
-          <h6>
-            <ImLinkedin style={{ marginBottom: "5px" }} /> Guillaume BENTO AIRES
-          </h6>
+          <a
+            href="https://github.com/EthernalSlayer"
+            title="mon compte github"
+            target="_blank"
+            className="text-light"
+            style={{ textDecoration: "none" }}
+          >
+            <h6>
+              <ImGithub style={{ marginBottom: "5px" }} /> EthernalSlayer
+            </h6>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/guillaume-bento-aires-7623071a3"
+            title="mon compte github"
+            target="_blank"
+            className="text-light"
+            style={{ textDecoration: "none" }}
+          >
+            <h6>
+              <ImLinkedin style={{ marginBottom: "5px" }} /> Guillaume BENTO
+              AIRES
+            </h6>
+          </a>
         </Col>
         <Col md="6" xs="12" className="text-light text-center">
           <h3>Information</h3>
