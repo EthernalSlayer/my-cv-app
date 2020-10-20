@@ -39,6 +39,11 @@ function Header() {
               PORTOFOLIO
             </Nav.Link>
           </NavLink>
+          <NavLink to="/contact" style={{ textDecoration: "none" }}>
+            <Nav.Link href="/contact" as="div">
+              CONTACT
+            </Nav.Link>
+          </NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

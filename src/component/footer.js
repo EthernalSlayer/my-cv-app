@@ -7,7 +7,12 @@ import { GiPirateSkull } from "react-icons/gi";
 
 function Footer() {
   return (
-    <Container className="bg-danger" fluid as="footer">
+    <Container
+      className="bg-danger"
+      fluid
+      as="footer"
+      style={{ boxShadow: "0 -5px 20px black" }}
+    >
       <Row>
         <Col md="6" xs="12" className="text-light text-center">
           <h3>Retrouver Moi</h3>
