@@ -103,7 +103,7 @@ function Contact() {
               />
             </Form.Group>
             <Form.Group controlId="message">
-              <Form.Label>Example textarea</Form.Label>
+              <Form.Label>Message</Form.Label>
               <Form.Control
                 as="textarea"
                 rows={3}
