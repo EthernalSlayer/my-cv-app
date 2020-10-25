@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { Col, Container, Row, Form, Button } from "react-bootstrap";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
   const data = {
@@ -19,7 +22,33 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(mail);
+    axios({
+      method: "post",
+      url: "http://localhost:3001/api/contact",
+      data: mail,
+    })
+      .then((response) =>
+        toast.success(response.data.message, {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: false,
+          progress: undefined,
+        })
+      )
+      .catch((error) =>
+        toast.error("trop de mail envoyer, veuillez attendre...", {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: false,
+          progress: undefined,
+        })
+      );
   };
 
   return (
@@ -88,6 +117,7 @@ function Contact() {
           </Form>
         </Col>
       </Row>
+      <ToastContainer />
     </Container>
   );
 }
