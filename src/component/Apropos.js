@@ -5,7 +5,12 @@ import Flip from "react-reveal/Flip";
 
 function Apropos() {
   return (
-    <Container className="bg-dark" fluid as="main">
+    <Container
+      className="bg-dark"
+      fluid
+      as="main"
+      style={{ padding: "50px", minHeight: "85vh" }}
+    >
       <Row className="justify-content-center">
         <Col md="auto" xs="auto">
           <Flip bottom>
