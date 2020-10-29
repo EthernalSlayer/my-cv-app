@@ -15,7 +15,7 @@ function Footer() {
     >
       <Row>
         <Col md="6" xs="12" className="text-light text-center">
-          <h3>Retrouver Moi</h3>
+          <h3>Retrouvez Moi</h3>
           <a
             href="https://github.com/EthernalSlayer"
             title="mon compte github"
