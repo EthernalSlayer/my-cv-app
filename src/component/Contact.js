@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Container, Row, Form, Button } from "react-bootstrap";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
@@ -14,10 +14,18 @@ function Contact() {
   };
 
   const [mail, setMail] = useState(data);
+  const [enable, setEnable] = useState("");
+
+  useEffect(() => {
+    if (Object.values(mail).includes("")) {
+      setEnable(false);
+    } else {
+      setEnable(true);
+    }
+  }, [mail]);
 
   const handleChange = (e) => {
     setMail({ ...mail, [e.target.id]: e.target.value });
-    console.log(e.target.value);
   };
 
   const handleSubmit = (e) => {
@@ -49,6 +57,7 @@ function Contact() {
           progress: undefined,
         })
       );
+    setMail(data);
   };
 
   return (
@@ -111,9 +120,20 @@ function Contact() {
                 onChange={handleChange}
               />
             </Form.Group>
-            <Button variant="danger" type="submit" onClick={handleSubmit}>
-              Submit
-            </Button>
+            {enable === false ? (
+              <Button
+                variant="danger"
+                type="submit"
+                onClick={handleSubmit}
+                disabled
+              >
+                Submit
+              </Button>
+            ) : (
+              <Button variant="danger" type="submit" onClick={handleSubmit}>
+                Submit
+              </Button>
+            )}
           </Form>
         </Col>
       </Row>
