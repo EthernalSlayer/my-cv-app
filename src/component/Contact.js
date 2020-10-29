@@ -56,7 +56,7 @@ function Contact() {
       className="bg-dark"
       fluid
       as="main"
-      style={{ paddingBottom: "5%" }}
+      style={{ padding: "50px", minHeight: "85vh" }}
     >
       <Row className="justify-content-center">
         <Col className="text-light text-center">

@@ -4,7 +4,12 @@ import avatar from "../assets/avatar.png";
 
 function Home() {
   return (
-    <Container className="bg-dark" fluid as="main">
+    <Container
+      className="bg-dark"
+      fluid
+      as="main"
+      style={{ padding: "50px", minHeight: "85vh" }}
+    >
       <Row className="justify-content-center" as="section">
         <Col md="auto" xs="auto">
           <Image
