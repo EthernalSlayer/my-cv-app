@@ -76,7 +76,7 @@ function Contact() {
         <Col md="6" xs="12" className="text-light">
           <Form>
             <Form.Group controlId="email">
-              <Form.Label>addresse mail</Form.Label>
+              <Form.Label>adresse mail</Form.Label>
               <Form.Control
                 type="email"
                 placeholder="example@test.com"

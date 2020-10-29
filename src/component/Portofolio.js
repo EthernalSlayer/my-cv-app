@@ -51,7 +51,7 @@ function Portofolio() {
                       opacity: 0.8,
                     }}
                   >
-                    Wild Code School projet 1, réaliser pour acquérir les bases
+                    Wild Code School projet 1, réalisé pour acquérir les bases
                     du html, css et javascript.
                   </Card.Text>
                   <Card.Text className="bg-danger">
@@ -83,7 +83,7 @@ function Portofolio() {
                       opacity: 0.8,
                     }}
                   >
-                    Mon premier projet réaliser en React.
+                    Mon premier projet réalisé en React.
                   </Card.Text>
                   <Card.Text className="bg-danger">
                     <h4 style={{ margin: 0 }}>React Todo List</h4>
@@ -117,8 +117,8 @@ function Portofolio() {
                       opacity: 0.8,
                     }}
                   >
-                    Projet React réaliser dans le cadre d'une présentation sur
-                    la cyber sécuriter
+                    Projet React réalisé dans le cadre d'une présentation sur la
+                    cyber sécurité
                   </Card.Text>
                   <Card.Text className="bg-danger">
                     <h4 style={{ margin: 0 }}>Hack For Noob</h4>
@@ -152,7 +152,7 @@ function Portofolio() {
                       opacity: 0.8,
                     }}
                   >
-                    Projet React réaliser pour découvrir firebase
+                    Projet React réalisé pour découvrir firebase
                   </Card.Text>
                   <Card.Text className="bg-danger">
                     <h4 style={{ margin: 0 }}>Marvel Quiz</h4>
