@@ -8,6 +8,7 @@ import todolist from "../assets/todolist.png";
 import hackfornoob from "../assets/hackfornoob.png";
 import marvelquiz from "../assets/marvelquiz.png";
 import gamovore from "../assets/gamovore.png";
+import roomChat from "../assets/roomChat.png";
 
 function Portofolio() {
   return (
@@ -33,6 +34,7 @@ function Portofolio() {
             href="https://wildcodeschool.github.io/Lyon-js-202005-project-quizz"
             title="le project quiz grenier"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Zoom>
               <Card
@@ -66,8 +68,9 @@ function Portofolio() {
         <Col md="4" xs="12">
           <a
             href="https://ethernalslayer.github.io/todo-list-app"
-            title="le project quiz grenier"
+            title="ma première todolist en react"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Zoom>
               <Card
@@ -97,8 +100,9 @@ function Portofolio() {
         <Col md="4" xs="12">
           <a
             href="https://hack-for-noob.netlify.app"
-            title="le project quiz grenier"
+            title="le project hack for noob"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Zoom>
               <Card
@@ -132,8 +136,9 @@ function Portofolio() {
         <Col md="4" xs="12">
           <a
             href="https://marvel-quiz-20908.firebaseapp.com"
-            title="le project quiz grenier"
+            title="le project marvel quiz"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Zoom>
               <Card
@@ -166,8 +171,9 @@ function Portofolio() {
         <Col md="4" xs="12">
           <a
             href="https://gamovore.netlify.app"
-            title="le project quiz grenier"
+            title="le project gamovore"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Zoom>
               <Card
@@ -192,6 +198,39 @@ function Portofolio() {
                   <Card.Text className="bg-danger">
                     <h4 style={{ margin: 0 }}>Gamovore</h4>
                     <p style={{ margin: 0 }}>Juillet-Août 2020</p>
+                  </Card.Text>
+                </Card.ImgOverlay>
+              </Card>
+            </Zoom>
+          </a>
+        </Col>
+        <Col md="4" xs="12">
+          <a
+            href="https://www.chat.ethernalslayer.com"
+            title="le projet room chat"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Zoom>
+              <Card
+                className="bg-dark text-white text-center"
+                style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
+              >
+                <Card.Img src={roomChat} alt="écran d'une room du chat" />
+                <Card.ImgOverlay style={{ top: "auto", bottom: 0, padding: 0 }}>
+                  <Card.Text
+                    style={{
+                      margin: 0,
+                      backgroundColor: "black",
+                      opacity: 0.8,
+                    }}
+                  >
+                    Un petit chat avec système de room pour découvrir socket.io
+                    et le déploiement sur serveur vps
+                  </Card.Text>
+                  <Card.Text className="bg-danger">
+                    <h4 style={{ margin: 0 }}>Room Chat</h4>
+                    <p style={{ margin: 0 }}>novembre 2020</p>
                   </Card.Text>
                 </Card.ImgOverlay>
               </Card>

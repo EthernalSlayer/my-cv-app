@@ -20,6 +20,7 @@ function Footer() {
             href="https://github.com/EthernalSlayer"
             title="mon compte github"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-light"
             style={{ textDecoration: "none" }}
           >
@@ -31,6 +32,7 @@ function Footer() {
             href="https://www.linkedin.com/in/guillaume-bento-aires-7623071a3"
             title="mon compte github"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-light"
             style={{ textDecoration: "none" }}
           >
