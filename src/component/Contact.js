@@ -68,10 +68,15 @@ function Contact() {
       style={{ padding: "50px", minHeight: "85vh" }}
     >
       <Row className="justify-content-center">
-        <Col className="text-light text-center">
-          <h1 style={{ marginTop: "2%" }}>CONTACT</h1>
+        <Col className="text-danger text-center">
+          <h1 style={{ marginTop: "2%" }}>CONTACT ME</h1>
         </Col>
       </Row>
+      {/* <Row className="justify-content-center">
+        <Col className="text-danger text-center">
+          <h2>me contacter</h2>
+        </Col>
+      </Row> */}
       <Row className="justify-content-center">
         <Col md="6" xs="12" className="text-light">
           <Form>
