@@ -56,7 +56,7 @@ function Portofolio() {
                     Wild Code School projet 1, réalisé pour acquérir les bases
                     du html, css et javascript.
                   </Card.Text>
-                  <Card.Text className="bg-danger">
+                  <Card.Text className="bg-danger" as="div">
                     <h4 style={{ margin: 0 }}>Le Quiz Du Grenier</h4>
                     <p style={{ margin: 0 }}>Juin 2020</p>
                   </Card.Text>
@@ -88,7 +88,7 @@ function Portofolio() {
                   >
                     Mon premier projet réalisé en React.
                   </Card.Text>
-                  <Card.Text className="bg-danger">
+                  <Card.Text className="bg-danger" as="div">
                     <h4 style={{ margin: 0 }}>React Todo List</h4>
                     <p style={{ margin: 0 }}>Juin 2020</p>
                   </Card.Text>
@@ -124,7 +124,7 @@ function Portofolio() {
                     Projet React réalisé dans le cadre d'une présentation sur la
                     cyber sécurité
                   </Card.Text>
-                  <Card.Text className="bg-danger">
+                  <Card.Text className="bg-danger" as="div">
                     <h4 style={{ margin: 0 }}>Hack For Noob</h4>
                     <p style={{ margin: 0 }}>Juillet 2020</p>
                   </Card.Text>
@@ -159,7 +159,7 @@ function Portofolio() {
                   >
                     Projet React réalisé pour découvrir firebase
                   </Card.Text>
-                  <Card.Text className="bg-danger">
+                  <Card.Text className="bg-danger" as="div">
                     <h4 style={{ margin: 0 }}>Marvel Quiz</h4>
                     <p style={{ margin: 0 }}>Août 2020</p>
                   </Card.Text>
@@ -195,7 +195,7 @@ function Portofolio() {
                     Wild Code School projet 2 création d'un site de mise en
                     relation de gamers
                   </Card.Text>
-                  <Card.Text className="bg-danger">
+                  <Card.Text className="bg-danger" as="div">
                     <h4 style={{ margin: 0 }}>Gamovore</h4>
                     <p style={{ margin: 0 }}>Juillet-Août 2020</p>
                   </Card.Text>
@@ -228,7 +228,7 @@ function Portofolio() {
                     Un petit chat avec système de room pour découvrir socket.io
                     et le déploiement sur serveur vps
                   </Card.Text>
-                  <Card.Text className="bg-danger">
+                  <Card.Text className="bg-danger" as="div">
                     <h4 style={{ margin: 0 }}>Room Chat</h4>
                     <p style={{ margin: 0 }}>novembre 2020</p>
                   </Card.Text>
