@@ -1,7 +1,6 @@
 import React from "react";
 import { Col, Container, Row, Card } from "react-bootstrap";
-
-import Zoom from "react-reveal/Zoom";
+import styled from "styled-components";
 
 import quizgrenier from "../assets/quizdugrenier.png";
 import todolist from "../assets/todolist.png";
@@ -9,6 +8,29 @@ import hackfornoob from "../assets/hackfornoob.png";
 import marvelquiz from "../assets/marvelquiz.png";
 import gamovore from "../assets/gamovore.png";
 import roomChat from "../assets/roomChat.png";
+
+const CardOverlay = styled(Card.ImgOverlay)`
+  opacity: 0;
+  &:hover {
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+  }
+`;
+
+const CardTitle = styled(Card.Text)`
+  height: 30%;
+`;
+
+const CardText = styled(Card.Text)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  margin: 0;
+  background-color: black;
+`;
 
 function Portofolio() {
   return (
@@ -36,33 +58,30 @@ function Portofolio() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Zoom>
-              <Card
-                className="bg-dark text-white text-center"
-                style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
-              >
-                <Card.Img
-                  src={quizgrenier}
-                  alt="écran d'accueil du site quiz du grenier"
-                />
-                <Card.ImgOverlay style={{ top: "auto", bottom: 0, padding: 0 }}>
-                  <Card.Text
-                    style={{
-                      margin: 0,
-                      backgroundColor: "black",
-                      opacity: 0.8,
-                    }}
-                  >
+            <Card
+              className="bg-dark text-white text-center"
+              style={{
+                marginTop: "5%",
+                boxShadow: "5px 10px 15px black",
+              }}
+            >
+              <Card.Img
+                src={quizgrenier}
+                alt="écran d'accueil du site quiz du grenier"
+              />
+              <CardOverlay>
+                <CardText>
+                  <span>
                     Wild Code School projet 1, réalisé pour acquérir les bases
                     du html, css et javascript.
-                  </Card.Text>
-                  <Card.Text className="bg-danger">
-                    <h4 style={{ margin: 0 }}>Le Quiz Du Grenier</h4>
-                    <p style={{ margin: 0 }}>Juin 2020</p>
-                  </Card.Text>
-                </Card.ImgOverlay>
-              </Card>
-            </Zoom>
+                  </span>
+                </CardText>
+                <CardTitle className="bg-danger" as="div">
+                  <h4 style={{ margin: 0 }}>Le Quiz Du Grenier</h4>
+                  <p style={{ margin: 0 }}>Juin 2020</p>
+                </CardTitle>
+              </CardOverlay>
+            </Card>
           </a>
         </Col>
         <Col md="4" xs="12">
@@ -72,29 +91,19 @@ function Portofolio() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Zoom>
-              <Card
-                className="bg-dark text-white text-center"
-                style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
-              >
-                <Card.Img src={todolist} alt="vue global de ma todo list app" />
-                <Card.ImgOverlay style={{ top: "auto", bottom: 0, padding: 0 }}>
-                  <Card.Text
-                    style={{
-                      margin: 0,
-                      backgroundColor: "black",
-                      opacity: 0.8,
-                    }}
-                  >
-                    Mon premier projet réalisé en React.
-                  </Card.Text>
-                  <Card.Text className="bg-danger">
-                    <h4 style={{ margin: 0 }}>React Todo List</h4>
-                    <p style={{ margin: 0 }}>Juin 2020</p>
-                  </Card.Text>
-                </Card.ImgOverlay>
-              </Card>
-            </Zoom>
+            <Card
+              className="bg-dark text-white text-center"
+              style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
+            >
+              <Card.Img src={todolist} alt="vue global de ma todo list app" />
+              <CardOverlay>
+                <CardText>Mon premier projet réalisé en React.</CardText>
+                <CardTitle className="bg-danger" as="div">
+                  <h4 style={{ margin: 0 }}>React Todo List</h4>
+                  <p style={{ margin: 0 }}>Juin 2020</p>
+                </CardTitle>
+              </CardOverlay>
+            </Card>
           </a>
         </Col>
         <Col md="4" xs="12">
@@ -104,33 +113,25 @@ function Portofolio() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Zoom>
-              <Card
-                className="bg-dark text-white text-center"
-                style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
-              >
-                <Card.Img
-                  src={hackfornoob}
-                  alt="page d'accueil du site hack for noob"
-                />
-                <Card.ImgOverlay style={{ top: "auto", bottom: 0, padding: 0 }}>
-                  <Card.Text
-                    style={{
-                      margin: 0,
-                      backgroundColor: "black",
-                      opacity: 0.8,
-                    }}
-                  >
-                    Projet React réalisé dans le cadre d'une présentation sur la
-                    cyber sécurité
-                  </Card.Text>
-                  <Card.Text className="bg-danger">
-                    <h4 style={{ margin: 0 }}>Hack For Noob</h4>
-                    <p style={{ margin: 0 }}>Juillet 2020</p>
-                  </Card.Text>
-                </Card.ImgOverlay>
-              </Card>
-            </Zoom>
+            <Card
+              className="bg-dark text-white text-center"
+              style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
+            >
+              <Card.Img
+                src={hackfornoob}
+                alt="page d'accueil du site hack for noob"
+              />
+              <CardOverlay>
+                <CardText>
+                  Projet React réalisé dans le cadre d'une présentation sur la
+                  cyber sécurité
+                </CardText>
+                <CardTitle className="bg-danger" as="div">
+                  <h4 style={{ margin: 0 }}>Hack For Noob</h4>
+                  <p style={{ margin: 0 }}>Juillet 2020</p>
+                </CardTitle>
+              </CardOverlay>
+            </Card>
           </a>
         </Col>
         <Col md="4" xs="12">
@@ -140,32 +141,24 @@ function Portofolio() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Zoom>
-              <Card
-                className="bg-dark text-white text-center"
-                style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
-              >
-                <Card.Img
-                  src={marvelquiz}
-                  alt="écran de connexion du site marvel quiz"
-                />
-                <Card.ImgOverlay style={{ top: "auto", bottom: 0, padding: 0 }}>
-                  <Card.Text
-                    style={{
-                      margin: 0,
-                      backgroundColor: "black",
-                      opacity: 0.8,
-                    }}
-                  >
-                    Projet React réalisé pour découvrir firebase
-                  </Card.Text>
-                  <Card.Text className="bg-danger">
-                    <h4 style={{ margin: 0 }}>Marvel Quiz</h4>
-                    <p style={{ margin: 0 }}>Août 2020</p>
-                  </Card.Text>
-                </Card.ImgOverlay>
-              </Card>
-            </Zoom>
+            <Card
+              className="bg-dark text-white text-center"
+              style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
+            >
+              <Card.Img
+                src={marvelquiz}
+                alt="écran de connexion du site marvel quiz"
+              />
+              <CardOverlay>
+                <CardText>
+                  Projet React réalisé pour découvrir firebase
+                </CardText>
+                <CardTitle className="bg-danger" as="div">
+                  <h4 style={{ margin: 0 }}>Marvel Quiz</h4>
+                  <p style={{ margin: 0 }}>Août 2020</p>
+                </CardTitle>
+              </CardOverlay>
+            </Card>
           </a>
         </Col>
         <Col md="4" xs="12">
@@ -175,33 +168,25 @@ function Portofolio() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Zoom>
-              <Card
-                className="bg-dark text-white text-center"
-                style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
-              >
-                <Card.Img
-                  src={gamovore}
-                  alt="écran de la game liste page du site gamovore"
-                />
-                <Card.ImgOverlay style={{ top: "auto", bottom: 0, padding: 0 }}>
-                  <Card.Text
-                    style={{
-                      margin: 0,
-                      backgroundColor: "black",
-                      opacity: 0.8,
-                    }}
-                  >
-                    Wild Code School projet 2 création d'un site de mise en
-                    relation de gamers
-                  </Card.Text>
-                  <Card.Text className="bg-danger">
-                    <h4 style={{ margin: 0 }}>Gamovore</h4>
-                    <p style={{ margin: 0 }}>Juillet-Août 2020</p>
-                  </Card.Text>
-                </Card.ImgOverlay>
-              </Card>
-            </Zoom>
+            <Card
+              className="bg-dark text-white text-center"
+              style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
+            >
+              <Card.Img
+                src={gamovore}
+                alt="écran de la game liste page du site gamovore"
+              />
+              <CardOverlay>
+                <CardText>
+                  Wild Code School projet 2 création d'un site de mise en
+                  relation de gamers
+                </CardText>
+                <CardTitle className="bg-danger" as="div">
+                  <h4 style={{ margin: 0 }}>Gamovore</h4>
+                  <p style={{ margin: 0 }}>Juillet-Août 2020</p>
+                </CardTitle>
+              </CardOverlay>
+            </Card>
           </a>
         </Col>
         <Col md="4" xs="12">
@@ -211,30 +196,22 @@ function Portofolio() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Zoom>
-              <Card
-                className="bg-dark text-white text-center"
-                style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
-              >
-                <Card.Img src={roomChat} alt="écran d'une room du chat" />
-                <Card.ImgOverlay style={{ top: "auto", bottom: 0, padding: 0 }}>
-                  <Card.Text
-                    style={{
-                      margin: 0,
-                      backgroundColor: "black",
-                      opacity: 0.8,
-                    }}
-                  >
-                    Un petit chat avec système de room pour découvrir socket.io
-                    et le déploiement sur serveur vps
-                  </Card.Text>
-                  <Card.Text className="bg-danger">
-                    <h4 style={{ margin: 0 }}>Room Chat</h4>
-                    <p style={{ margin: 0 }}>novembre 2020</p>
-                  </Card.Text>
-                </Card.ImgOverlay>
-              </Card>
-            </Zoom>
+            <Card
+              className="bg-dark text-white text-center"
+              style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
+            >
+              <Card.Img src={roomChat} alt="écran d'une room du chat" />
+              <CardOverlay>
+                <CardText>
+                  Un petit chat avec système de room pour découvrir socket.io et
+                  le déploiement sur serveur vps
+                </CardText>
+                <CardTitle className="bg-danger" as="div">
+                  <h4 style={{ margin: 0 }}>Room Chat</h4>
+                  <p style={{ margin: 0 }}>novembre 2020</p>
+                </CardTitle>
+              </CardOverlay>
+            </Card>
           </a>
         </Col>
       </Row>
