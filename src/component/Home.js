@@ -3,6 +3,8 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import styled from "styled-components";
 import avatar from "../assets/avatar.png";
 
+import evolution from "../assets/hixs-evolution.png";
+
 const AkaName = styled.h3`
   text-shadow: 1px 1px 2px black;
 `;
@@ -17,7 +19,11 @@ function Home() {
       className="bg-dark"
       fluid
       as="main"
-      style={{ padding: "50px", minHeight: "85vh" }}
+      style={{
+        padding: "50px",
+        minHeight: "85vh",
+        backgroundImage: `url(${evolution})`,
+      }}
     >
       <Row className="justify-content-center" as="section">
         <Col md="auto" xs="auto">

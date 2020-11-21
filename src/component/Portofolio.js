@@ -9,6 +9,8 @@ import marvelquiz from "../assets/marvelquiz.png";
 import gamovore from "../assets/gamovore.png";
 import roomChat from "../assets/roomChat.png";
 
+import evolution from "../assets/hixs-evolution.png";
+
 const CategoryTitle = styled.h2`
   text-shadow: 1px 1px 2px black;
   margin-top: 1%;
@@ -48,7 +50,7 @@ function Portofolio() {
       className="bg-dark"
       fluid
       as="main"
-      style={{ paddingBottom: "5%" }}
+      style={{ paddingBottom: "5%", backgroundImage: `url(${evolution})` }}
     >
       <Row className="justify-content-center">
         <Col className="text-light text-center">
