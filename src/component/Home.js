@@ -1,6 +1,15 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
+import styled from "styled-components";
 import avatar from "../assets/avatar.png";
+
+const AkaName = styled.h3`
+  text-shadow: 1px 1px 2px black;
+`;
+
+const Title = styled.h1`
+  text-shadow: 2px 2px 1px red;
+`;
 
 function Home() {
   return (
@@ -36,27 +45,18 @@ function Home() {
       </Row>
       <Row className="justify-content-center" as="section">
         <Col md="auto" xs="auto">
-          <h3 className="text-danger">(aka EthernalSlayer)</h3>
+          <AkaName className="text-danger">(aka EthernalSlayer)</AkaName>
         </Col>
       </Row>
       <Row className="justify-content-center" as="section">
         <Col md="auto" xs="auto">
-          <h1 className="text-light" style={{ fontWeight: "bold" }}>
-            DEVELOPPEUR
-          </h1>
+          <Title className="text-light">DEVELOPPEUR</Title>
         </Col>
         <Col md="auto" xs="auto">
-          <h1 className="text-light" style={{ fontWeight: "bold" }}>
-            WEB
-          </h1>
+          <Title className="text-light">WEB</Title>
         </Col>
         <Col md="auto" xs="auto">
-          <h1
-            className="text-light"
-            style={{ fontWeight: "bold", marginBottom: "10%" }}
-          >
-            REACT/NODE.JS
-          </h1>
+          <Title className="text-light">REACT/NODE.JS</Title>
         </Col>
       </Row>
     </Container>
