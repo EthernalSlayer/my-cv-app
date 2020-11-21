@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Col, Container, Row, Form, Button } from "react-bootstrap";
+import styled from "styled-components";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+const CategoryTitle = styled.h2`
+  text-shadow: 1px 1px 2px black;
+  margin-top: 5%;
+`;
 
 function Contact() {
   const data = {
@@ -65,11 +71,11 @@ function Contact() {
       className="bg-dark"
       fluid
       as="main"
-      style={{ padding: "50px", minHeight: "85vh" }}
+      style={{ paddingBottom: "50px", minHeight: "85vh" }}
     >
       <Row className="justify-content-center">
         <Col className="text-danger text-center">
-          <h1 style={{ marginTop: "2%" }}>CONTACT ME</h1>
+          <CategoryTitle>CONTACT ME</CategoryTitle>
         </Col>
       </Row>
       {/* <Row className="justify-content-center">

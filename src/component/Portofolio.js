@@ -9,6 +9,16 @@ import marvelquiz from "../assets/marvelquiz.png";
 import gamovore from "../assets/gamovore.png";
 import roomChat from "../assets/roomChat.png";
 
+const CategoryTitle = styled.h2`
+  text-shadow: 1px 1px 2px black;
+  margin-top: 1%;
+`;
+
+const Title = styled.h1`
+  margin-top: 2%;
+  text-shadow: 2px 2px 1px red;
+`;
+
 const CardOverlay = styled(Card.ImgOverlay)`
   opacity: 0;
   &:hover {
@@ -42,12 +52,12 @@ function Portofolio() {
     >
       <Row className="justify-content-center">
         <Col className="text-light text-center">
-          <h1 style={{ marginTop: "2%" }}>PORTOFOLIO</h1>
+          <Title>PORTOFOLIO</Title>
         </Col>
       </Row>
       <Row className="justify-content-center">
         <Col className="text-danger text-center">
-          <h2>MY PROJECTS</h2>
+          <CategoryTitle>MY PROJECTS</CategoryTitle>
         </Col>
       </Row>
       <Row className="justify-content-center">
