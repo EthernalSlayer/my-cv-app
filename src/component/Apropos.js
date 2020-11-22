@@ -27,7 +27,11 @@ function Apropos() {
             <Card.Body>
               <Card.Title
                 className="text-danger"
-                style={{ fontWeight: "bold", textShadow: "1px 1px 2px black" }}
+                style={{
+                  fontFamily: "Turret Road, cursive",
+                  fontWeight: "bold",
+                  textShadow: "1px 1px 2px black",
+                }}
                 as="h2"
               >
                 A PROPOS

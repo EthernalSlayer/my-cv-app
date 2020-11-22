@@ -6,10 +6,13 @@ import avatar from "../assets/avatar.png";
 import evolution from "../assets/hixs-evolution.png";
 
 const AkaName = styled.h3`
+  font-family: "Gugi", cursive;
+  font-size: 1.7em;
   text-shadow: 1px 1px 2px black;
 `;
 
 const Title = styled.h1`
+  font-family: "Turret Road", cursive;
   text-shadow: 2px 2px 1px red;
 `;
 
