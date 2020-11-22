@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row, Card } from "react-bootstrap";
+import styled from "styled-components";
 
 import Bounce from "react-reveal/Bounce";
 
@@ -22,22 +23,36 @@ import vscode1 from "../assets/vscode1.png";
 import firebase1 from "../assets/firebase1.png";
 import postman from "../assets/postman1.png";
 
+import evolution from "../assets/hixs-evolution.png";
+
+const CategoryTitle = styled.h2`
+  font-family: "Gugi", cursive;
+  text-shadow: 1px 1px 2px black;
+  margin-top: 5%;
+`;
+
+const Title = styled.h1`
+  font-family: "Turret Road", cursive;
+  margin-top: 2%;
+  text-shadow: 2px 2px 1px red;
+`;
+
 function Competences() {
   return (
     <Container
       className="bg-dark"
       fluid
       as="main"
-      style={{ paddingBottom: "5%" }}
+      style={{ paddingBottom: "5%", backgroundImage: `url(${evolution})` }}
     >
       <Row className="justify-content-center">
         <Col className="text-light text-center">
-          <h1 style={{ marginTop: "2%" }}>COMPETENCES</h1>
+          <Title>COMPETENCES</Title>
         </Col>
       </Row>
       <Row className="justify-content-center">
         <Col className="text-danger text-center">
-          <h2>LANGUAGES</h2>
+          <CategoryTitle>LANGUAGES</CategoryTitle>
         </Col>
       </Row>
       <Row className="justify-content-center">
@@ -96,7 +111,7 @@ function Competences() {
       </Row>
       <Row className="justify-content-center">
         <Col className="text-danger text-center">
-          <h2 style={{ marginTop: "5%" }}>FRAMEWORK / LIBRARY</h2>
+          <CategoryTitle>FRAMEWORK / LIBRARY</CategoryTitle>
         </Col>
       </Row>
       <Row className="justify-content-center">
@@ -168,7 +183,7 @@ function Competences() {
       </Row>
       <Row className="justify-content-center">
         <Col className="text-danger text-center">
-          <h2 style={{ marginTop: "5%" }}>DATABASES</h2>
+          <CategoryTitle>DATABASES</CategoryTitle>
         </Col>
       </Row>
       <Row className="justify-content-center">
@@ -201,7 +216,7 @@ function Competences() {
       </Row>
       <Row className="justify-content-center">
         <Col className="text-danger text-center">
-          <h2 style={{ marginTop: "5%" }}>OUTILS</h2>
+          <CategoryTitle>OUTILS</CategoryTitle>
         </Col>
       </Row>
       <Row className="justify-content-center">
@@ -273,7 +288,7 @@ function Competences() {
       </Row>
       <Row className="justify-content-center">
         <Col className="text-danger text-center">
-          <h2 style={{ marginTop: "5%" }}>DESIGN</h2>
+          <CategoryTitle>DESIGN</CategoryTitle>
         </Col>
       </Row>
       <Row className="justify-content-center">
