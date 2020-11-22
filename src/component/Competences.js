@@ -23,12 +23,16 @@ import vscode1 from "../assets/vscode1.png";
 import firebase1 from "../assets/firebase1.png";
 import postman from "../assets/postman1.png";
 
+import evolution from "../assets/hixs-evolution.png";
+
 const CategoryTitle = styled.h2`
+  font-family: "Gugi", cursive;
   text-shadow: 1px 1px 2px black;
   margin-top: 5%;
 `;
 
 const Title = styled.h1`
+  font-family: "Turret Road", cursive;
   margin-top: 2%;
   text-shadow: 2px 2px 1px red;
 `;
@@ -39,7 +43,7 @@ function Competences() {
       className="bg-dark"
       fluid
       as="main"
-      style={{ paddingBottom: "5%" }}
+      style={{ paddingBottom: "5%", backgroundImage: `url(${evolution})` }}
     >
       <Row className="justify-content-center">
         <Col className="text-light text-center">

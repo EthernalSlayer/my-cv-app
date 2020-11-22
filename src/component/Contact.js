@@ -5,7 +5,10 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import evolution from "../assets/hixs-evolution.png";
+
 const CategoryTitle = styled.h2`
+  font-family: "Gugi", cursive;
   text-shadow: 1px 1px 2px black;
   margin-top: 5%;
 `;
@@ -71,7 +74,11 @@ function Contact() {
       className="bg-dark"
       fluid
       as="main"
-      style={{ paddingBottom: "50px", minHeight: "85vh" }}
+      style={{
+        paddingBottom: "50px",
+        minHeight: "85vh",
+        backgroundImage: `url(${evolution})`,
+      }}
     >
       <Row className="justify-content-center">
         <Col className="text-danger text-center">
@@ -87,12 +94,13 @@ function Contact() {
         <Col md="6" xs="12" className="text-light">
           <Form>
             <Form.Group controlId="email">
-              <Form.Label>adresse mail</Form.Label>
+              <Form.Label>Adresse mail</Form.Label>
               <Form.Control
                 type="email"
                 placeholder="example@test.com"
                 value={mail.email}
                 onChange={handleChange}
+                style={{ boxShadow: "inset 2px 2px 5px black" }}
               />
             </Form.Group>
             <Form.Group controlId="nom">
@@ -102,6 +110,7 @@ function Contact() {
                 placeholder="nom"
                 value={mail.nom}
                 onChange={handleChange}
+                style={{ boxShadow: "inset 2px 2px 5px black" }}
               />
             </Form.Group>
             <Form.Group controlId="prenom">
@@ -111,6 +120,9 @@ function Contact() {
                 placeholder="prénom"
                 value={mail.prenom}
                 onChange={handleChange}
+                style={{
+                  boxShadow: "inset 2px 2px 5px black",
+                }}
               />
             </Form.Group>
             <Form.Group controlId="objet">
@@ -120,6 +132,9 @@ function Contact() {
                 placeholder="quel est l'objet de votre message ?"
                 value={mail.objet}
                 onChange={handleChange}
+                style={{
+                  boxShadow: "inset 2px 2px 5px black",
+                }}
               />
             </Form.Group>
             <Form.Group controlId="message">
@@ -129,6 +144,9 @@ function Contact() {
                 rows={3}
                 value={mail.message}
                 onChange={handleChange}
+                style={{
+                  boxShadow: "inset 2px 2px 5px black",
+                }}
               />
             </Form.Group>
             {enable === false ? (
@@ -138,11 +156,11 @@ function Contact() {
                 onClick={handleSubmit}
                 disabled
               >
-                Submit
+                Envoyer
               </Button>
             ) : (
               <Button variant="danger" type="submit" onClick={handleSubmit}>
-                Submit
+                Envoyer
               </Button>
             )}
           </Form>
