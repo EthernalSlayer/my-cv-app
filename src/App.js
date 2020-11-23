@@ -1,7 +1,12 @@
 import React from "react";
 import Header from "./component/Header";
 import Footer from "./component/footer";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  HashRouter,
+} from "react-router-dom";
 import Home from "./component/Home";
 import Competences from "./component/Competences";
 import Apropos from "./component/Apropos";
@@ -10,7 +15,7 @@ import Contact from "./component/Contact";
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename="/">
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -20,7 +25,7 @@ function App() {
         <Route path="/contact" component={Contact} />
       </Switch>
       <Footer />
-    </Router>
+    </HashRouter>
   );
 }
 
