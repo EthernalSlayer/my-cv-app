@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, HashRouter } from "react-router-dom";
 import { ImHome } from "react-icons/im";
 
 function Header() {
