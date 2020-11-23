@@ -24,23 +24,23 @@ function Header() {
               ACCUEIL
             </Nav.Link>
           </NavLink>
-          <NavLink to="/a-propos" style={{ textDecoration: "none" }}>
-            <Nav.Link href="/a-propos" as="div">
+          <NavLink to="/#/a-propos" style={{ textDecoration: "none" }}>
+            <Nav.Link href="/#/a-propos" as="div">
               A PROPOS
             </Nav.Link>
           </NavLink>
-          <NavLink to="/competences" style={{ textDecoration: "none" }}>
-            <Nav.Link href="/competences" as="div">
+          <NavLink to="/#/competences" style={{ textDecoration: "none" }}>
+            <Nav.Link href="/#/competences" as="div">
               COMPETENCES
             </Nav.Link>
           </NavLink>
-          <NavLink to="/portofolio" style={{ textDecoration: "none" }}>
-            <Nav.Link href="/portofolio" as="div">
+          <NavLink to="/#/portofolio" style={{ textDecoration: "none" }}>
+            <Nav.Link href="/#/portofolio" as="div">
               PORTOFOLIO
             </Nav.Link>
           </NavLink>
-          <NavLink to="/contact" style={{ textDecoration: "none" }}>
-            <Nav.Link href="/contact" as="div">
+          <NavLink to="/#/contact" style={{ textDecoration: "none" }}>
+            <Nav.Link href="/#/contact" as="div">
               CONTACT
             </Nav.Link>
           </NavLink>
