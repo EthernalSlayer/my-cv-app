@@ -13,7 +13,7 @@ import evolution from "../assets/hixs-evolution.png";
 
 const CategoryTitle = styled.h2`
   text-shadow: 1px 1px 2px black;
-  margin-top: 1%;
+  margin-top: 50px;
 `;
 
 const Title = styled.h1`
@@ -33,6 +33,8 @@ const CardOverlay = styled(Card.ImgOverlay)`
 
 const CardTitle = styled(Card.Text)`
   height: 30%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 `;
 
 const CardText = styled(Card.Text)`
@@ -42,6 +44,14 @@ const CardText = styled(Card.Text)`
   height: 70%;
   margin: 0;
   background-color: black;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+`;
+
+const CustomCard = styled(Card)`
+  margin-top: 50px;
+  box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 `;
 
 function Portofolio() {
@@ -70,13 +80,7 @@ function Portofolio() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Card
-              className="bg-dark text-white text-center"
-              style={{
-                marginTop: "5%",
-                boxShadow: "5px 10px 15px black",
-              }}
-            >
+            <CustomCard className="bg-dark text-white text-center">
               <Card.Img
                 src={quizgrenier}
                 alt="écran d'accueil du site quiz du grenier"
@@ -93,7 +97,7 @@ function Portofolio() {
                   <p style={{ margin: 0 }}>Juin 2020</p>
                 </CardTitle>
               </CardOverlay>
-            </Card>
+            </CustomCard>
           </a>
         </Col>
         <Col md="4" xs="12">
@@ -103,10 +107,7 @@ function Portofolio() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Card
-              className="bg-dark text-white text-center"
-              style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
-            >
+            <CustomCard className="bg-dark text-white text-center">
               <Card.Img src={todolist} alt="vue global de ma todo list app" />
               <CardOverlay>
                 <CardText>Mon premier projet réalisé en React.</CardText>
@@ -115,7 +116,7 @@ function Portofolio() {
                   <p style={{ margin: 0 }}>Juin 2020</p>
                 </CardTitle>
               </CardOverlay>
-            </Card>
+            </CustomCard>
           </a>
         </Col>
         <Col md="4" xs="12">
@@ -125,10 +126,7 @@ function Portofolio() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Card
-              className="bg-dark text-white text-center"
-              style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
-            >
+            <CustomCard className="bg-dark text-white text-center">
               <Card.Img
                 src={hackfornoob}
                 alt="page d'accueil du site hack for noob"
@@ -143,7 +141,7 @@ function Portofolio() {
                   <p style={{ margin: 0 }}>Juillet 2020</p>
                 </CardTitle>
               </CardOverlay>
-            </Card>
+            </CustomCard>
           </a>
         </Col>
         <Col md="4" xs="12">
@@ -153,10 +151,7 @@ function Portofolio() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Card
-              className="bg-dark text-white text-center"
-              style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
-            >
+            <CustomCard className="bg-dark text-white text-center">
               <Card.Img
                 src={marvelquiz}
                 alt="écran de connexion du site marvel quiz"
@@ -170,7 +165,7 @@ function Portofolio() {
                   <p style={{ margin: 0 }}>Août 2020</p>
                 </CardTitle>
               </CardOverlay>
-            </Card>
+            </CustomCard>
           </a>
         </Col>
         <Col md="4" xs="12">
@@ -180,10 +175,7 @@ function Portofolio() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Card
-              className="bg-dark text-white text-center"
-              style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
-            >
+            <CustomCard className="bg-dark text-white text-center">
               <Card.Img
                 src={gamovore}
                 alt="écran de la game liste page du site gamovore"
@@ -198,7 +190,7 @@ function Portofolio() {
                   <p style={{ margin: 0 }}>Juillet-Août 2020</p>
                 </CardTitle>
               </CardOverlay>
-            </Card>
+            </CustomCard>
           </a>
         </Col>
         <Col md="4" xs="12">
@@ -208,10 +200,7 @@ function Portofolio() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Card
-              className="bg-dark text-white text-center"
-              style={{ marginTop: "5%", boxShadow: "5px 10px 15px black" }}
-            >
+            <CustomCard className="bg-dark text-white text-center">
               <Card.Img src={roomChat} alt="écran d'une room du chat" />
               <CardOverlay>
                 <CardText>
@@ -223,7 +212,7 @@ function Portofolio() {
                   <p style={{ margin: 0 }}>novembre 2020</p>
                 </CardTitle>
               </CardOverlay>
-            </Card>
+            </CustomCard>
           </a>
         </Col>
       </Row>

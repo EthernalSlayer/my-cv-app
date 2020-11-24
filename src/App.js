@@ -1,12 +1,7 @@
 import React from "react";
 import Header from "./component/Header";
 import Footer from "./component/footer";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  HashRouter,
-} from "react-router-dom";
+import { Route, Switch, HashRouter } from "react-router-dom";
 import Home from "./component/Home";
 import Competences from "./component/Competences";
 import Apropos from "./component/Apropos";

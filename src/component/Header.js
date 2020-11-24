@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav } from "react-bootstrap";
-import { NavLink, HashRouter } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { ImHome } from "react-icons/im";
 
 function Header() {
@@ -11,7 +11,7 @@ function Header() {
       variant="dark"
       expand="md"
       as="header"
-      style={{ boxShadow: "0 5px 15px black" }}
+      style={{ boxShadow: "0px 0px 5px 4px rgba(0, 0, 0, 0.5)" }}
     >
       <Navbar.Brand href="/">
         <ImHome style={{ marginBottom: "5px" }} /> GUILLAUME B.A.

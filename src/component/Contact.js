@@ -92,38 +92,48 @@ function Contact() {
       <Row className="justify-content-center">
         <Col md="6" xs="12" className="text-light">
           <Form>
-            <Form.Group controlId="email">
-              <Form.Label>Adresse mail</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="example@test.com"
-                value={mail.email}
-                onChange={handleChange}
-                style={{ boxShadow: "inset 2px 2px 5px black" }}
-              />
-            </Form.Group>
-            <Form.Group controlId="nom">
-              <Form.Label>Nom</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="nom"
-                value={mail.nom}
-                onChange={handleChange}
-                style={{ boxShadow: "inset 2px 2px 5px black" }}
-              />
-            </Form.Group>
-            <Form.Group controlId="prenom">
-              <Form.Label>Prénom</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="prénom"
-                value={mail.prenom}
-                onChange={handleChange}
-                style={{
-                  boxShadow: "inset 2px 2px 5px black",
-                }}
-              />
-            </Form.Group>
+            <Row className="justify-content-center">
+              <Col>
+                <Form.Group controlId="email">
+                  <Form.Label>Adresse mail</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="example@test.com"
+                    value={mail.email}
+                    onChange={handleChange}
+                    style={{ boxShadow: "inset 2px 2px 5px black" }}
+                  />
+                </Form.Group>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Form.Group controlId="nom">
+                  <Form.Label>Nom</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="nom"
+                    value={mail.nom}
+                    onChange={handleChange}
+                    style={{ boxShadow: "inset 2px 2px 5px black" }}
+                  />
+                </Form.Group>
+              </Col>
+              <Col>
+                <Form.Group controlId="prenom">
+                  <Form.Label>Prénom</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="prénom"
+                    value={mail.prenom}
+                    onChange={handleChange}
+                    style={{
+                      boxShadow: "inset 2px 2px 5px black",
+                    }}
+                  />
+                </Form.Group>
+              </Col>
+            </Row>
             <Form.Group controlId="objet">
               <Form.Label>Objet</Form.Label>
               <Form.Control
