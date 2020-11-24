@@ -5,8 +5,7 @@ import avatar from "../assets/avatar.png";
 
 import evolution from "../assets/hixs-evolution.png";
 
-const AkaName = styled.h3`
-  font-size: 1.7em;
+const SubTitle = styled.h2`
   text-shadow: 1px 1px 2px black;
 `;
 
@@ -33,37 +32,23 @@ function Home() {
             roundedCircle
             style={{
               marginTop: "15%",
-              boxShadow: "10px 10px 15px black",
+              boxShadow: "0px 0px 5px 4px rgba(0, 0, 0, 0.5)",
             }}
           />
         </Col>
       </Row>
       <Row className="justify-content-center" as="section">
-        <Col md="auto" xs="auto">
-          <h2 className="text-muted" style={{ marginTop: "5%" }}>
-            GUILLAUME
-          </h2>
-        </Col>
-        <Col md="auto" xs="auto">
-          <h2 className="text-muted" style={{ marginTop: "5%" }}>
-            BENTO AIRES
-          </h2>
+        <Col md="auto" xs="auto" className="text-center">
+          <Title className="text-light" style={{ marginTop: "5%" }}>
+            <span>GUILLAUME</span> <span>BENTO AIRES</span>
+          </Title>
         </Col>
       </Row>
       <Row className="justify-content-center" as="section">
-        <Col md="auto" xs="auto">
-          <AkaName className="text-danger">(aka EthernalSlayer)</AkaName>
-        </Col>
-      </Row>
-      <Row className="justify-content-center" as="section">
-        <Col md="auto" xs="auto">
-          <Title className="text-light">DEVELOPPEUR</Title>
-        </Col>
-        <Col md="auto" xs="auto">
-          <Title className="text-light">WEB</Title>
-        </Col>
-        <Col md="auto" xs="auto">
-          <Title className="text-light">REACT/NODE.JS</Title>
+        <Col md="auto" xs="auto" className="text-center">
+          <SubTitle className="text-danger">
+            <span>Développeur</span> <span>Web</span> <span>React/Node.js</span>
+          </SubTitle>
         </Col>
       </Row>
     </Container>
