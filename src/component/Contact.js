@@ -54,17 +54,31 @@ function Contact() {
           progress: undefined,
         })
       )
-      .catch((error) =>
-        toast.error("trop de mail envoyer, veuillez attendre...", {
-          position: "top-right",
-          autoClose: 2000,
-          hideProgressBar: false,
-          closeOnClick: false,
-          pauseOnHover: true,
-          draggable: false,
-          progress: undefined,
-        })
-      );
+      .catch((error) => {
+        if (Object.values(error)[2].data.errors !== undefined) {
+          const errMsg = Object.values(error)[2].data.errors[0].msg;
+          const errParam = Object.values(error)[2].data.errors[0].param;
+          toast.error(`error: ${errMsg} on ${errParam}`, {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: false,
+            progress: undefined,
+          });
+        } else {
+          toast.error("Trop de mails envoyer...", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: false,
+            progress: undefined,
+          });
+        }
+      });
     setMail(data);
   };
 
@@ -101,6 +115,7 @@ function Contact() {
                     placeholder="example@test.com"
                     value={mail.email}
                     onChange={handleChange}
+                    required
                     style={{ boxShadow: "inset 2px 2px 5px black" }}
                   />
                 </Form.Group>
@@ -115,6 +130,7 @@ function Contact() {
                     placeholder="nom"
                     value={mail.nom}
                     onChange={handleChange}
+                    required
                     style={{ boxShadow: "inset 2px 2px 5px black" }}
                   />
                 </Form.Group>
@@ -127,6 +143,7 @@ function Contact() {
                     placeholder="prénom"
                     value={mail.prenom}
                     onChange={handleChange}
+                    required
                     style={{
                       boxShadow: "inset 2px 2px 5px black",
                     }}
@@ -141,6 +158,7 @@ function Contact() {
                 placeholder="quel est l'objet de votre message ?"
                 value={mail.objet}
                 onChange={handleChange}
+                required
                 style={{
                   boxShadow: "inset 2px 2px 5px black",
                 }}
@@ -153,6 +171,7 @@ function Contact() {
                 rows={3}
                 value={mail.message}
                 onChange={handleChange}
+                required
                 style={{
                   boxShadow: "inset 2px 2px 5px black",
                 }}
