@@ -40,7 +40,7 @@ function Contact() {
     e.preventDefault();
     axios({
       method: "post",
-      url: "http://localhost:3001/api/contact",
+      url: "https://ethernal-slayer-mailer.herokuapp.com/api/contact",
       data: mail,
     })
       .then((response) =>
