@@ -40,6 +40,39 @@ const CustomCard = styled(Card)`
   margin-top: 8%;
 `;
 
+const languages = [
+  { img: html, name: "HTML" },
+  { img: css, name: "CSS" },
+  { img: js, name: "JavaScript" },
+  { img: python, name: "Python" },
+];
+
+const frameworks = [
+  { img: reactImg, name: "React" },
+  { img: node, name: "Node.JS" },
+  { img: express1, name: "Express.JS" },
+  { img: bootstrap1, name: "Bootstrap" },
+  { img: styled1, name: "Styled Components" },
+];
+
+const databases = [
+  { img: mysql, name: "MySQL" },
+  { img: mongo, name: "MongoDB" },
+];
+
+const tools = [
+  { img: github, name: "Github" },
+  { img: git1, name: "Git" },
+  { img: vscode1, name: "VScode" },
+  { img: firebase1, name: "Firebase" },
+  { img: postman, name: "Postman" },
+];
+
+const designs = [
+  { img: figma, name: "Figma" },
+  { img: mockflow, name: "Mockflow" },
+];
+
 function Competences() {
   return (
     <Container
@@ -59,46 +92,18 @@ function Competences() {
         </Col>
       </Row>
       <Row className="justify-content-center">
-        <Col md="2" xs="6">
-          <Bounce right>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={html} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">HTML</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
-        <Col md="2" xs="6">
-          <Bounce right>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={css} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">CSS</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
-        <Col md="2" xs="6">
-          <Bounce right>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={js} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">JavaScript</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
-        <Col md="2" xs="6">
-          <Bounce right>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={python} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">Python</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
+        {languages.map((language) => (
+          <Col md="2" xs="6">
+            <Bounce right>
+              <CustomCard className="text-center">
+                <Card.Img variant="top" src={language.img} />
+                <Card.Body style={{ padding: 0 }}>
+                  <Card.Text as="p">{language.name}</Card.Text>
+                </Card.Body>
+              </CustomCard>
+            </Bounce>
+          </Col>
+        ))}
       </Row>
       <Row className="justify-content-center">
         <Col className="text-danger text-center">
@@ -106,56 +111,18 @@ function Competences() {
         </Col>
       </Row>
       <Row className="justify-content-center">
-        <Col md="2" xs="6">
-          <Bounce left>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={reactImg} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">React</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
-        <Col md="2" xs="6">
-          <Bounce left>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={node} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">Node.JS</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
-        <Col md="2" xs="6">
-          <Bounce left>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={express1} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">Express.JS</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
-        <Col md="2" xs="6">
-          <Bounce left>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={bootstrap1} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">Bootstrap</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
-        <Col md="2" xs="6">
-          <Bounce left>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={styled1} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">Styled Components</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
+        {frameworks.map((framework) => (
+          <Col md="2" xs="6">
+            <Bounce left>
+              <CustomCard className="text-center">
+                <Card.Img variant="top" src={framework.img} />
+                <Card.Body style={{ padding: 0 }}>
+                  <Card.Text as="p">{framework.name}</Card.Text>
+                </Card.Body>
+              </CustomCard>
+            </Bounce>
+          </Col>
+        ))}
       </Row>
       <Row className="justify-content-center">
         <Col className="text-danger text-center">
@@ -163,26 +130,22 @@ function Competences() {
         </Col>
       </Row>
       <Row className="justify-content-center">
-        <Col md="2" xs="6">
-          <Bounce right>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={mysql} className="bg-secondary" />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">MySQL</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
-        <Col md="2" xs="6">
-          <Bounce right>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={mongo} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">MongoDB</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
+        {databases.map((database) => (
+          <Col md="2" xs="6">
+            <Bounce right>
+              <CustomCard className="text-center">
+                <Card.Img
+                  variant="top"
+                  src={database.img}
+                  className="bg-secondary"
+                />
+                <Card.Body style={{ padding: 0 }}>
+                  <Card.Text as="p">{database.name}</Card.Text>
+                </Card.Body>
+              </CustomCard>
+            </Bounce>
+          </Col>
+        ))}
       </Row>
       <Row className="justify-content-center">
         <Col className="text-danger text-center">
@@ -190,56 +153,18 @@ function Competences() {
         </Col>
       </Row>
       <Row className="justify-content-center">
-        <Col md="2" xs="6">
-          <Bounce left>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={github} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">Github</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
-        <Col md="2" xs="6">
-          <Bounce left>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={git1} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">Git</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
-        <Col md="2" xs="6">
-          <Bounce left>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={vscode1} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">VScode</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
-        <Col md="2" xs="6">
-          <Bounce left>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={firebase1} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">Firebase</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
-        <Col md="2" xs="6">
-          <Bounce left>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={postman} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">Postman</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
+        {tools.map((tool) => (
+          <Col md="2" xs="6">
+            <Bounce left>
+              <CustomCard className="text-center">
+                <Card.Img variant="top" src={tool.img} />
+                <Card.Body style={{ padding: 0 }}>
+                  <Card.Text as="p">{tool.name}</Card.Text>
+                </Card.Body>
+              </CustomCard>
+            </Bounce>
+          </Col>
+        ))}
       </Row>
       <Row className="justify-content-center">
         <Col className="text-danger text-center">
@@ -247,26 +172,18 @@ function Competences() {
         </Col>
       </Row>
       <Row className="justify-content-center">
-        <Col md="2" xs="6">
-          <Bounce right>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={figma} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">Figma</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
-        <Col md="2" xs="6">
-          <Bounce right>
-            <CustomCard className="text-center">
-              <Card.Img variant="top" src={mockflow} />
-              <Card.Body style={{ padding: 0 }}>
-                <Card.Text as="p">Mockflow</Card.Text>
-              </Card.Body>
-            </CustomCard>
-          </Bounce>
-        </Col>
+        {designs.map((design) => (
+          <Col md="2" xs="6">
+            <Bounce right>
+              <CustomCard className="text-center">
+                <Card.Img variant="top" src={design.img} />
+                <Card.Body style={{ padding: 0 }}>
+                  <Card.Text as="p">{design.name}</Card.Text>
+                </Card.Body>
+              </CustomCard>
+            </Bounce>
+          </Col>
+        ))}
       </Row>
     </Container>
   );
